@@ -1,0 +1,187 @@
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'cursive';
+    }
+  
+    header {
+      background-color: #f56b99;
+      color: white;
+      text-align: center;
+      font-size: 21px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 11px 0;
+      
+    }
+    
+  
+    .nav {
+      list-style-type: none;
+      padding: 0;
+    }
+  
+    .nav li {
+      display: inline;
+      margin-right: 20px;
+    }
+  
+    .nav a {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 20px;
+    }
+  
+    .nav a:hover {
+      background-color: white;
+      color: black;
+    }
+  
+    .container {
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .breed {
+      width: 30%;
+      text-align: center;
+      margin: 10px;
+    }
+  
+    .breed img {
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+  
+    .breed img:hover {
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+    }
+  
+    .breed-name {
+      font-weight: bold;
+      text-decoration: none;
+      color: #f56b99;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 24px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+  
+    .breed-name:hover {
+      background-color: #f56b99;
+      color: white;
+      transition: background-color 0.5s;
+    }
+  
+    .breed-name a {
+      text-decoration: none !important;
+      color: inherit !important;
+      cursor: default;
+    }
+  
+    @media (max-width: 980px) {
+      header {
+        font-size: 40px !important;
+        padding: 60px 0 !important;
+      }
+  
+      .nav a {
+        font-size: 35px !important;
+      }
+  
+      .breed {
+        width: calc(50% - 20px);
+      }
+  
+      .breed-name {
+        font-size: 40px;
+      }
+    }
+  
+    @media (max-width: 980px) {
+      .breed img {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  </style>
+  
+  
+</head>
+<body>
+    <header>
+        <h1>Cat Breeds</h1>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stages.html">Life Stages</a></li>
+            <li><a href="diet.html">Diet</a></li>
+            <li><a href="facts.html">Fun Facts</a></li>
+            <li><a href="gigi.html">Gigi</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="breed">
+            <a href="Scottishfold.html" style="text-decoration: none;">
+                <img src="scottish1.jpg" alt="Scottish Fold">
+                <p class="breed-name">Scottish Fold</p>
+            </a>
+        </div>
+        <div class="breed">
+            <a href="Siamese.html" style="text-decoration: none;">
+                <img src="Siamese.jpg" alt="Siamese">
+                <p class="breed-name">Siamese</p>
+            </a>
+        </div>
+        <div class="breed">
+            <a href="Bombay.html" style="text-decoration: none;">
+                <img src="Bombay.jpg" alt="Bombay">
+                <p class="breed-name">Bombay</p>
+            </a>
+        </div>
+        <div class="breed">
+            <a href="Sphynx.html" style="text-decoration: none;">
+                <img src="Sphynx.jpg" alt="Sphynx">
+                <p class="breed-name">Sphynx</p>
+            </a>
+        </div>
+        <div class="breed">
+            <a href="Exotic.html" style="text-decoration: none;">
+                <img src="Exotic.jpg" alt="Exotic Shorthair">
+                <p class="breed-name">Exotic Shorthair</p>
+            </a>
+        </div>
+        <div class="breed">
+            <a href="American.html" style="text-decoration: none;">
+                <img src="American.jpg" alt="American Shorthair">
+                <p class="breed-name">American Shorthair</p>
+            </a>
+        </div>
+        <div class="breed">
+            <a href="Maine.html" style="text-decoration: none;">
+                <img src="Maine.jpg" alt="Maine Coon">
+                <p class="breed-name">Maine Coon</p>
+            </a>
+        </div>
+        <div class="breed">
+            <a href="Siberian.html" style="text-decoration: none;">
+                <img src="Siberian.jpg" alt="Serbian">
+                <p class="breed-name">Siberian</p>
+            </a>
+        </div>
+        <div class="breed">
+            <a href="Ragdoll.html" style="text-decoration: none;">
+                <img src="Ragdoll.jpg" alt="Ragdoll">
+                <p class="breed-name">Ragdoll</p>
+            </a>
+        </div>
+        
+    </div>
+</body>
+</html>

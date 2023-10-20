@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Stages Of A Cat</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-color: #f56b99;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 24px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        @media (max-width: 980px) {
+        header {
+            font-size: 15px;
+            padding: 5px 0;
+        }
+    }
+
+        .paw {
+            width: 24px;
+            vertical-align: middle;
+        }
+
+        .nav {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 20px;
+        }
+        @media (max-width: 980px) {
+        .nav a {
+            font-size: 13px;
+        }
+    }
+
+        .nav a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+            
+            transition: background-color 0.3s, color 0.3s;
+            
+            padding: 10px;
+            display: inline-block; 
+        }
+
+        
+        section h2:hover {
+            background-color: white;
+            color: black;
+        }
+
+        section img {
+            width: 400px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+@media (max-width: 980px) {
+    section img {
+        width: 100%; 
+        max-width: 100%;
+    }
+}
+
+
+        
+        section img:hover {
+            transform: scale(1.05);
+        }
+
+        section p {
+            font-size: 22px;
+            color: black;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+        @media (max-width: 980px) {
+        section p {
+            font-size: 15px;
+    }
+}
+
+        
+        .expanded {
+            max-height: 1000px;
+        }
+
+        
+        .kitten {
+            background-color: #ff9eb5; 
+        }
+
+        .Junior {
+            background-color: #ff6b88; 
+        }
+
+        .Adult {
+            background-color: #ff3860; 
+        }
+
+        .Mature {
+            background-color: #ff003d; 
+        }
+
+        .Senior {
+            background-color: #d70032; 
+        }
+
+        .Super-senior {
+            background-color: #b2002e; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Life Stages</h1>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breeds.html">Breeds</a></li>
+            <li><a href="diet.html">Diet</a></li>
+            <li><a href="facts.html">Fun Facts</a></li>
+            <li><a href="gigi.html">Gigi</a></li>
+        </ul>
+    </header>
+
+    <section class="kitten" style="text-align: center;">
+        <h2 data-target="kitten" onclick="toggleInfo('kitten')">Kitten - Birth to 6 Months</h2>
+        <img src="https://images.pexels.com/photos/290164/pexels-photo-290164.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Kitten" onclick="toggleInfo('kitten')">
+        <p id="kitten" class="hidden">The kitten stage in a cat's life is a period of rapid growth and development, typically spanning from birth to around 6 months of age. During this stage, kittens are incredibly playful, curious, and full of boundless energy. They rely on their mother's milk initially but gradually transition to solid food. Kittens start to learn important social and behavioral skills through interaction with their littermates and human caregivers. This stage is also when they begin to explore their surroundings, sharpen their hunting instincts through play, and establish early bonds with their human companions. As they grow, their personalities start to emerge, setting the foundation for their future adult cat behavior and characteristics. Proper care, nutrition, and socialization during the kitten stage are crucial for ensuring they grow up to be healthy, well-adjusted adults.</p>
+    </section>
+
+    <section class="Junior" style="text-align: center;">
+        <h2 data-target="Junior" onclick="toggleInfo('Junior')">Junior - 7 months to 2 years</h2>
+        <img src="https://images.pexels.com/photos/4734724/pexels-photo-4734724.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Junior" onclick="toggleInfo('Junior')">
+        <p id="Junior" class="hidden">The junior stage of a cat's life typically spans from 7 months to 2 years old. During this phase, cats continue to grow physically, but the rapid development seen in kittenhood slows down. Their playful and energetic nature remains, and they often display bursts of activity and curiosity. Junior cats become more independent but still seek attention and social interaction. They are in the prime of their learning phase, refining hunting skills, and further solidifying their personalities. This stage is an excellent time to establish routines, reinforce training, and provide ample mental and physical stimulation to nurture a well-adjusted and happy adult cat.</p>
+    </section>
+
+    <section class="Adult" style="text-align: center;">
+        <h2 data-target="Adult" onclick="toggleInfo('Adult')">Adult - 3 to 6 years</h2>
+        <img src="https://images.pexels.com/photos/18508896/pexels-photo-18508896/free-photo-of-photo-of-an-orange-domestic-cat.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Adult" onclick="toggleInfo('Adult')">
+        <p id="Adult" class="hidden">The adult stage of a cat's life typically spans from 3 to 6 years old. During this phase, cats have reached their full physical maturity and typically maintain a stable size and weight. They tend to exhibit a more settled and predictable behavior compared to their younger years. Adult cats are often less active than kittens and juniors, but they still enjoy play and interaction, albeit at a more measured pace. This stage is characterized by a cat's peak physical health and is an ideal time for maintaining regular veterinary check-ups, a balanced diet, and an enriching environment to ensure a happy and content adult life.</p>
+    </section>
+
+    <section class="Mature" style="text-align: center;">
+        <h2 data-target="Mature" onclick="toggleInfo('Mature')">Mature - 7 to 10 years</h2>
+        <img src="Mature.jpg" alt="Mature" onclick="toggleInfo('Mature')">
+        <p id="Mature" class="hidden">The mature stage of a cat's life typically spans from 7 to 10 years old. During this phase, cats continue to age gracefully, although there may be subtle signs of slowing down. They often become more relaxed, preferring comfortable lounging spots and shorter play sessions. Some may experience slight changes in health, such as reduced mobility or dental issues, which may require increased veterinary care. Despite these changes, mature cats can still lead active and fulfilling lives with proper care, a balanced diet, and regular vet visits. Their calm and settled demeanor often makes them cherished companions for those seeking a more tranquil feline friend.</p>
+    </section>
+
+    <section class="Senior" style="text-align: center;">
+        <h2 data-target="Senior" onclick="toggleInfo('Senior')">Senior - 11 to 14 years</h2>
+        <img src="Senior.jpg" alt="Senior" onclick="toggleInfo('Senior')">
+        <p id="Senior" class="hidden">The senior cat stage, typically spanning from 10 to 15 years of age, is a period when cats start to exhibit more noticeable signs of aging. Cats in this stage may experience a decrease in energy and activity levels. They might develop age-related health issues such as arthritis or dental problems, and their grooming habits may change. Regular veterinary check-ups and specialized senior cat diets can help manage these issues and ensure a comfortable and happy senior life. Despite these changes, senior cats often maintain their affectionate nature and can continue to provide companionship and love to their human families for many years.</p>
+    </section>
+
+    <section class="Super-senior" style="text-align: center;">
+        <h2 data-target="Super-senior" onclick="toggleInfo('Super-senior')">Super Senior - 15+ years</h2>
+        <img src="SeniorPlus.jpg" alt="Super Senior" onclick="toggleInfo('Super-senior')">
+        <p id="Super-senior" class="hidden">The super senior stage of a cat's life, which typically begins at 15 years or older, represents a time of graceful aging and a deep bond between the cat and their caregiver. Cats in this stage may exhibit further slowing down, reduced hearing or vision, and may require more attention to their health, including regular veterinary visits and potentially specialized senior cat diets. While their activity levels may decline, their affectionate and loving nature often remains steadfast, offering a sense of comfort and companionship to their human companions. Providing a comfortable and safe environment, as well as extra care and attention, can help ensure a high quality of life for super senior cats as they continue to age with dignity and grace.</p>
+    </section>
+
+    <script>
+        // JavaScript function to toggle the visibility of paragraph
+        function toggleInfo(stageId) {
+            const paragraph = document.getElementById(stageId);
+            paragraph.classList.toggle('expanded');
+        }
+    </script>
+</body>
+</html>

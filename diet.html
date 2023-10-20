@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diets</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        header {
+        background-color: #f56b99;
+        color: white;
+        text-align: center;
+        padding: 11px 0;
+        font-size: 21px;
+    }
+
+        .nav {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            font-size: 20px;
+        }
+        @media (max-width: 980px) {
+      header {
+        font-size: 20px !important;
+        padding: 2px 0 !important;
+      }
+  
+      .nav a {
+        padding: 5px;
+        font-size: 12px !important;
+      }
+    }
+
+        .nav a:hover {
+            background-color: white;
+            color: #f56b99;
+        }
+
+        .container {
+            max-width: 100%;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #e4e4e4;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .section h2 {
+            font-size: 28px;
+            color: #f56b99;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #333;
+        }
+       
+
+        ul {
+           
+            
+            list-style-type: disc;
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+
+        ul li {
+            
+            font-size: 22px;
+            color: #ee4f84;
+        }
+        
+@media (max-width: 980px) {
+    .section h2 {
+        font-size: 20px; 
+        color: #f56b99;
+        margin-bottom: 10px;
+    }
+
+    .section p {
+        font-size: 14px; 
+        color: #333;
+    }
+
+    ul {
+        list-style-type: disc;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    ul li {
+        font-size: 12px; 
+        color: #ee4f84;
+    }
+}
+
+
+        .first-word-bold li {
+            margin-bottom: 10px; 
+            position: relative; 
+        }
+
+        .first-word-bold li .bold-word {
+            font-weight: bold;
+            color: black;
+        }
+
+       
+
+            
+        
+
+        .expandable-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+
+        .expandable-content.expanded {
+            max-height: 1000px;
+        }
+
+        .interactive-title {
+            cursor: pointer;
+            position: relative;
+            display: inline-block;
+            padding-right: 25px;
+        }
+
+        .interactive-title::after {
+            content: '\25B8';
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .interactive-title.expanded::after {
+            content: '\25BE';
+            transform: translateY(-50%) rotate(180deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Diets</h1>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breeds.html">Breeds</a></li>
+            <li><a href="stages.html">Life Stages</a></li>
+            <li><a href="facts.html">Fun Facts</a></li>
+            <li><a href="gigi.html">Gigi</a></li>
+        </ul>
+    </header>
+
+    <div class="container">
+        <div class="section">
+            <h2 class="interactive-title">Cat Diets by Age</h2>
+            <div class="expandable-content">
+                <p>Cats have different dietary needs at various stages of their lives:</p>
+                <ul class="first-word-bold">
+                    <li><span class="bold-word">Kittens (0-6 months): </span> Require a diet rich in protein and calories for growth. Typically, feed them high-quality kitten-specific wet or dry cat food formulated to meet their nutritional needs. A general guideline is to provide 3-4 meals per day, with approximately 1/4 to 1/3 cup of dry cat food per meal, supplemented with one to two 3-ounce cans of wet cat food per day.</li>
+                    <li><span class="bold-word">Adult Cats (7 months - 6 years):</span> Require a well-balanced diet, which typically includes a combination of high-quality wet and dry cat food. A general guideline is to feed an adult cat around 1/2 to 1 cup of dry cat food per day, supplemented with one to two 3-ounce cans of wet cat food.</li>
+                    <li><span class="bold-word">Mature Cats (7-10 years):</span> Require a balanced diet that supports their maintenance needs, with slightly reduced calorie intake compared to their adult years. Typically, provide around 1/3 to 1/2 cup of high-quality dry cat food per day, along with one to two 3-ounce cans of wet cat food.</li>
+                    <li><span class="bold-word">Senior Cats (11-14 years):</span> Benefit from a diet tailored to their age, often including specially formulated senior cat food with added nutrients to support joint and dental health. Typically, provide around 1/4 to 1/3 cup of high-quality dry cat food per day, supplemented with one to two 3-ounce cans of wet cat food.  These added nutrients can help maintain their overall health and comfort in their senior years.</li>
+                    <li><span class="bold-word">Super Senior Cats (15+ years):</span> Require a specialized diet formulated to meet their specific needs in their advanced years. Choose senior cat food with added nutrients to support joint, dental, and overall health. Typically, provide around 1/4 to 1/3 cup of high-quality dry cat food per day, supplemented with one to two 3-ounce cans of wet cat food. Adjust the portions based on your cat's specific age, weight, and activity level. These added nutrients can contribute to their comfort and well-being in their golden years. Regular vet check-ups become even more important to address age-related health concerns.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="interactive-title">Human Foods Safe for Cats</h2>
+            <div class="expandable-content">
+                <p>While cats primarily need cat food, some human foods are safe for occasional treats:</p>
+                <ul class="first-word-bold">
+                    <li><span class="bold-word">Cooked Chicken or Turkey:</span> Plain, boneless, and skinless meat is a favorite among many cats.</li>
+                    <li><span class="bold-word">Cooked Fish:</span> Salmon and tuna, without added seasonings or spices, are occasional treats.</li>
+                    <li><span class="bold-word">Carrots:</span> Cooked or steamed carrots can be a healthy snack, but cats are obligate carnivores and don't require vegetables in their diet.</li>
+                    <li><span class="bold-word">Cooked Eggs:</span> Plain scrambled or boiled eggs can provide a protein boost.</li>
+                    <li><span class="bold-word">Plain Rice:</span> Plain, cooked white or brown rice may be offered in small amounts.</li>
+                    <li><span class="bold-word">Cooked Oatmeal:</span> Plain oatmeal, cooked with water and no added sugar, can be a source of fiber.</li>
+                    <li><span class="bold-word">Pumpkin:</span> Canned, unsweetened pumpkin (not pumpkin pie filling) can aid digestion.</li>
+                    <li><span class="bold-word">Cantaloupe:</span> Small amounts of fresh cantaloupe are safe as an occasional treat.</li>
+                    <li><span class="bold-word">Blueberries:</span> A few fresh, washed blueberries can serve as a healthy treat.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="interactive-title">Foods Toxic to Cats</h2>
+            <div class="expandable-content">
+                <p>Never feed these foods to your cat, as they can be toxic and harmful:</p>
+                <ul class="first-word-bold">
+                    <li><span class="bold-word">Chocolate:</span> Contains theobromine and caffeine, which are toxic to cats and can cause vomiting, diarrhea, seizures, and even death.</li>
+                    <li><span class="bold-word">Grapes</span> and Raisins: Can lead to kidney failure in cats, with even small amounts causing severe issues.</li>
+                    <li><span class="bold-word">Onions and Garlic:</span> Contain compounds that can damage a cat's red blood cells, leading to anemia</li>
+                    <li><span class="bold-word">Alcohol:</span> Even small amounts of alcohol can be extremely toxic and potentially fatal to cats.</li>
+                    <li><span class="bold-word">Caffeine:</span> Found in coffee, tea, and some energy drinks, caffeine can cause rapid heart rate, restlessness, and tremors in cats.</li>
+                    <li><span class="bold-word">Bones:</span> Cooked bones can splinter and cause choking or internal injuries in cats.</li>
+                    <li><span class="bold-word">Xylitol:</span> A sugar substitute found in many sugar-free products like gum and candy, xylitol can lead to insulin release, causing hypoglycemia and liver damage.</li>
+                    <li><span class="bold-word">Raw Meat and Fish:</span> May contain harmful bacteria like Salmonella and E. coli, and can lead to nutritional imbalances over time.</li>
+                    <li><span class="bold-word">Dairy Products:</span> While many cats are lactose intolerant and can develop digestive issues from milk and dairy products.</li>
+                    <li><span class="bold-word">Avocado:</span> Contains a substance called persin, which is toxic to cats and can cause gastrointestinal problems.</li>
+                    <li><span class="bold-word">Bones and Fat Trimmings:</span> Can lead to digestive obstructions and pancreatitis, respectively.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript function to toggle the visibility of expandable content
+        document.addEventListener('DOMContentLoaded', function () {
+            const interactiveTitles = document.querySelectorAll('.interactive-title');
+
+            interactiveTitles.forEach((title) => {
+                title.addEventListener('click', () => {
+                    const content = title.nextElementSibling;
+                    title.classList.toggle('expanded');
+                    if (title.classList.contains('expanded')) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    } else {
+                        content.style.maxHeight = '0';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
